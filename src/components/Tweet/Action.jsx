@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
 
-import UnstyledButton from '../UnstyledButton';
+import UnstyledButton from "../UnstyledButton"
 
 const Action = ({ color, size, children, onClick }) => {
-  const [isHovered, setIsHovered] = React.useState(false);
+  const [isHovered, setIsHovered] = React.useState(false)
 
   return (
     <Wrapper
@@ -16,8 +16,8 @@ const Action = ({ color, size, children, onClick }) => {
     >
       {children}
     </Wrapper>
-  );
-};
+  )
+}
 
 const Wrapper = styled(UnstyledButton)`
   position: relative;
@@ -27,7 +27,7 @@ const Wrapper = styled(UnstyledButton)`
   outline: none;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -35,13 +35,13 @@ const Wrapper = styled(UnstyledButton)`
     bottom: 0;
     border-radius: 50%;
     opacity: 0;
-    background-color: ${p => p.circleColor};
+    background-color: ${(p) => p.circleColor};
   }
 
   &:focus:after,
   &:hover:after {
     opacity: 0.12;
   }
-`;
+`
 
-export default Action;
+export default Action

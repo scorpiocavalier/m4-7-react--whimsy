@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export default styled.button`
   display: block;
@@ -12,4 +12,4 @@ export default styled.button`
   &:active {
     color: inherit;
   }
-`;
+`

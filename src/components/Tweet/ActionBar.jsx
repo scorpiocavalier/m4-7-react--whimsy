@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
-import LikeButton from "../LikeButton";
-import Action from "./Action";
-import TweetActionIcon from "./TweetActionIcon";
+import LikeButton from "../LikeButton"
+import Action from "./Action"
+import TweetActionIcon from "./TweetActionIcon"
 
 const ActionBar = ({ isRetweetedByCurrentUser, isLikedByCurrentUser }) => {
   return (
@@ -24,14 +24,14 @@ const ActionBar = ({ isRetweetedByCurrentUser, isLikedByCurrentUser }) => {
         <TweetActionIcon kind="share" />
       </Action>
     </Wrapper>
-  );
-};
+  )
+}
 
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 48px;
-`;
+`
 
-export default ActionBar;
+export default ActionBar
