@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
-import { TweetContext } from '../TweetContext'
+import TweetContext from '../TweetContext'
 
-const Header = () => {
+export default () => {
   const { displayName, username, avatarSrc } = useContext(TweetContext)
 
   return (
@@ -45,5 +45,3 @@ const Username = styled.div`
   line-height: 20px;
   color: rgb(101, 119, 134);
 `
-
-export default Header

@@ -27,10 +27,8 @@ const PATHS = {
   ),
 }
 
-const TweetActionIcon = ({ size = 24, kind, color }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24">
+export default ({ size = 24, kind, color }) => (
+  <svg width={size} height={size} viewBox='0 0 24 24' color={color}>
     {PATHS[kind]}
   </svg>
 )
-
-export default TweetActionIcon

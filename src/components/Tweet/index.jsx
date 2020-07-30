@@ -1,11 +1,11 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
-import { TweetContext } from "../TweetContext"
+import TweetContext from "../TweetContext"
 import Header from "./Header"
 import Stats from './Stats'
 import ActionBar from "./ActionBar"
 
-const Tweet = () => {
+export default () => {
   const { tweetContents, date } = useContext(TweetContext)
 
   return (
@@ -46,5 +46,3 @@ const Divider = styled.div`
   height: 1px;
   background: rgb(230, 236, 240);
 `
-
-export default Tweet

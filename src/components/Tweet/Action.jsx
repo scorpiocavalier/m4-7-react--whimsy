@@ -1,10 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
-
 import UnstyledButton from "../UnstyledButton"
 
-const Action = ({ color, size, children, onClick }) => {
-  const [isHovered, setIsHovered] = React.useState(false)
+export default ({ color, size, children, onClick }) => {
+  const [isHovered, setIsHovered] = useState(false)
 
   return (
     <Wrapper
@@ -43,5 +42,3 @@ const Wrapper = styled(UnstyledButton)`
     opacity: 0.12;
   }
 `
-
-export default Action

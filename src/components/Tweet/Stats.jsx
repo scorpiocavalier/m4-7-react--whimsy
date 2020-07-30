@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { TweetContext } from '../TweetContext'
+import TweetContext from '../TweetContext'
 import styled from "styled-components"
 
 export default () => {
