@@ -18,7 +18,7 @@ const LikeButton = ({ size = 40 }) => {
           <ScaleIn>
             <Heart width={heartSize} />
           </ScaleIn>
-          {/* <PoppingCircle size={size} color="#E790F7" /> */}
+          <PoppingCircle size={size} color="#E790F7" />
         </>
       ) : (
         <Heart width={heartSize} />
