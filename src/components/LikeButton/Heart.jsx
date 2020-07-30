@@ -21,7 +21,6 @@ export default ({ width }) => {
 }
 
 const Svg = styled.svg`
-  z-index: 1;
   display: block;
   backface-visibility: hidden;
   fill: none;
